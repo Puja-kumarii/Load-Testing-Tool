@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ma-load-tester:
+    build:
+      context: .
+    ports:
+      - 8080:8080
+      - 5665:5665
+    volumes:
+      - ma-loader-json-store:/app/test_results
+
+volumes:
+  ma-loader-json-store:

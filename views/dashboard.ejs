@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partial/header') %>
+  <body>
+    <div class="container d-flex  flex-column mt-4">
+    <h1>CHOOSE YOUR OUTPUT FILE</h1>
+    <hr>
+    <h5>Click on run button and go to dashboard to analyze results</h5>
+    <br>
+    <table class="table table-striped table-hover">
+      <thead class="thead">
+        <tr>
+          <th scope="col">Output File</th>
+          <th scope="col">Go to Dashboard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% test_result_files.sort().reverse().forEach(function(test_result_files) { %>
+          <tr>
+              <%- include('partial/dashboard_row', { test_result_files: test_result_files }) %>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>

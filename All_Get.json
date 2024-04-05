@@ -1,0 +1,24 @@
+{
+    "configuration_details": {
+        "api_key": "a1c55fc5f4f5ede3921bc49118d6d752aa78b2a0",
+        "domain_url": "https://devmango1.mangopulse.com",
+        "ramp_up_duration": "2",
+        "steady_state_duration": "0",
+        "virtual_users": "1",
+        "login_endpoint": "/api/login.json"
+    },
+    "suites": [
+        {
+            "method": "GET",
+            "api_endpoint": "/api/feeds/51285/comments.json"
+        },
+        {
+            "method": "GET",
+            "apiEndPoint": "/api/posts.json"
+        },
+        {
+            "method": "GET",
+            "apiEndPoint": "/api/feeds/direct_messages.json"
+        }
+    ]
+}

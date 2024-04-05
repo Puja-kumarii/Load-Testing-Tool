@@ -1,0 +1,17 @@
+{
+  "configuration_details": {
+    "api_key": "",
+    "domain_url": "",
+    "ramp_up_duration": "",
+    "steady_state_duration": "",
+    "virtual_users": "",
+    "login_endpoint": ""
+  },
+  
+  "suites": [
+    {
+      "method": "",
+      "api_endpoint": ""
+    }
+  ]
+}
